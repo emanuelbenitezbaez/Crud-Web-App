@@ -35,8 +35,5 @@ namespace CrudWebApp.Models
         public int Edad { get; set; }
 
 
-
-
-
     }
 }
