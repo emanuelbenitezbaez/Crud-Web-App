@@ -1,3 +1,43 @@
 ﻿@model IEnumerable<Persona>
 @{
+	ViewData["Title"] = "Listado de personas";
 }
+
+<div class="container-fluid">
+    <div class="content-wrapper">
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1 class="text-center text-primary">
+                            Listado de Personas
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header text-center text-bold">
+                    Registro de Nuevas Personas
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-primary">
+                        <a asp-controller="Persona" asp-action="Crear" class="nav-link text-black">
+                            <i class="fas fa-plus-circle" style="color: black; font-size: 20px"></i>
+                            Agregar Persona
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="table-responsive">   
+                <table id="dtPersonas">
+
+                </table>
+            </div>
+        </div>
+    </section>
+</div>
+
