@@ -93,8 +93,30 @@
                     </tbody>
 
                 </table>
+				<form>	
+					<input hidden id="idPersona" name="Id" value="" />
+				</form>
             </div>
         </div>
     </section>
 </div>
+
+<script>
+	//cargar  data table
+	window.onload = function () {
+		$(document).ready(function () {
+			$('#dtPersonas').DataTable({
+			"Lenguage":{
+				"url":"//cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
+			},
+			"aLengthMenu":[
+				[Int16Array, 25, 50, -1],
+				["10", "25", "50", "Todos"]
+			]
+
+		});
+		});
+		
+	}
+</script>
 
